@@ -1,0 +1,15 @@
+Fonts bundled with NULL (loaded from this folder; nothing is fetched from the internet).
+
+Inter (inter-Regular.woff, inter-Medium.woff, inter-SemiBold.woff)
+  Copyright 2016 The Inter Project Authors. Subset to Latin and punctuation; no other change.
+Lora (Lora-Variable.ttf, Lora-Italic-Variable.ttf)
+  Copyright 2011 The Lora Project Authors (https://github.com/cyrealtype/Lora-Cyrillic), with Reserved Font Name "Lora".
+  Included unmodified.
+
+Both are licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
+(The licence text is not reproduced in this file. Read it at that address before redistributing the fonts on their own.)
+
+Why Lora and not Source Serif 4: Source Serif 4 could not be obtained in the build environment (network access to
+font sources was blocked), so a comparable free serif that was available locally was used instead.
+
+Checked again at the final review pass (2026-10-15): the build machine's filesystem was searched and holds no Source Serif 4 font files, so Lora remains the heading font. If you add the real files to this folder, point the heading @font-face in css/style.css at them and add them here.
